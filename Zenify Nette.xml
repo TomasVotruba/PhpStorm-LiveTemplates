@@ -1,75 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templateSet group="Zenify Nette">
-  <template name="tt" value="$this-&gt;template-&gt;$KEY$ = $$$VALUE$;" description="set template var" toReformat="false" toShortenFQNames="true">
-    <variable name="KEY" expression="variableOfType=(&quot;&quot;)" defaultValue="&quot;key&quot;" alwaysStopAt="true" />
-    <variable name="VALUE" expression="KEY" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="SQL" value="false" />
-      <option name="JSP" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="PHP" value="true" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
-    </context>
-  </template>
-  <template name="@inj" value="/** @var $HINT$ @inject */&#10;public $$$SERVICE$;" description="inject via annotation" toReformat="false" toShortenFQNames="true">
-    <variable name="SERVICE" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="HINT" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="SQL" value="false" />
-      <option name="JSP" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="PHP" value="true" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
-    </context>
-  </template>
   <template name="cc" value="/**&#10; * @return $NAMESPACE$&#10; */&#10;protected function createComponent$NAME$($NAMESPACE$ $$factory)&#10;{&#10;&#9;$$control = $$factory-&gt;create();&#10;&#9;return $$control;&#10;}&#10;" description="create component in presenter" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="NAMESPACE" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="SQL" value="false" />
-      <option name="JSP" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="PHP" value="true" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
-    </context>
-  </template>
-  <template name="dd" value="dd($SELECTION$);" description="dump die" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -136,28 +69,6 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="tit" value="$this['title']-&gt;setTitle($TITLE$);" description="set title" toReformat="true" toShortenFQNames="true">
-    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="SQL" value="false" />
-      <option name="JSP" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="PHP" value="true" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
-    </context>
-  </template>
   <template name="ccf" value="protected function createComponentForm($FACTORY$ $factory)&#10;{&#10;&#9;$form = $factory-&gt;create();&#10;&#9;$END$&#10;&#9;$form-&gt;addSubmit('send', '$SUBMIT$');&#10;&#10;&#9;return $form;&#10;}" description="create component form" toReformat="true" toShortenFQNames="true">
     <variable name="FACTORY" expression="enum(&quot;Zenify\\Application\\IEntityFormFactory&quot;, &quot;Zenify\\Application\\IFormFactory&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="SUBMIT" expression="" defaultValue="&quot;Uložit&quot;" alwaysStopAt="true" />
@@ -183,28 +94,6 @@
   </template>
   <template name="rt" value="$this-&gt;redirect('$WHERE$');" description="redirect this" toReformat="true" toShortenFQNames="true">
     <variable name="WHERE" expression="" defaultValue="&quot;this&quot;" alwaysStopAt="true" />
-    <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="SQL" value="false" />
-      <option name="JSP" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="PHP" value="true" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
-    </context>
-  </template>
-  <template name="cr" value="protected function render$NAME$()&#10;{&#10;&#9;$END$&#10;}" description="component render" toReformat="true" toShortenFQNames="true">
-    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -252,32 +141,4 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="concon" value="&#9;/** @var Nette\DI\Container */&#10;&#9;private $container;&#10;&#10;&#9;public function __construct(Nette\DI\Container $container)&#10;&#9;{&#10;&#9;&#9;$this-&gt;container = $container;&#10;&#9;}&#10;&#9;" description="construct with container" toReformat="true" toShortenFQNames="true">
-    <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="SQL" value="false" />
-      <option name="JSP" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="PHP" value="true" />
-      <option name="PHP Comment" value="false" />
-      <option name="PHP String Literal" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
-    </context>
-  </template>
 </templateSet>
-

@@ -24,50 +24,6 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="fp" value="/**&#10; * @{inheritDoc}&#10; */&#10;public function findPairs($criteria = [], $value = NULL, $orderBy = [], $key = NULL)&#10;{&#10;&#9;return $this-&gt;$DAO$Dao-&gt;findPairs($criteria, $value, $orderBy, $key);&#10;}&#10;" description="findPairs" toReformat="true" toShortenFQNames="true">
-    <variable name="DAO" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="SQL" value="false" />
-      <option name="JSP" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="PHP" value="true" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
-    </context>
-  </template>
-  <template name="fob" value="/**&#10; * @{inheritDoc}&#10; */&#10;public function findOneBy($criteria, $order = [])&#10;{&#10;&#9;return $this-&gt;$DAO$Dao-&gt;findOneBy($criteria, $order);&#10;}&#10;&#9;" description="findOneBy" toReformat="true" toShortenFQNames="true">
-    <variable name="DAO" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="SQL" value="false" />
-      <option name="JSP" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="PHP" value="true" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
-    </context>
-  </template>
   <template name="fb" value="/**&#10; * @{inheritDoc}&#10; */&#10;public function findBy(array $criteria, array $orderBy = NULL, $limit = NULL, $offset = NULL)&#10;{&#10;&#9;return $this-&gt;$DAO$Dao-&gt;findBy($criteria, $orderBy, $limit, $offset);&#10;}" description="findBy" toReformat="true" toShortenFQNames="true">
     <variable name="DAO" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -94,34 +50,6 @@
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="COLUMN1" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="COLUMN2" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="SQL" value="false" />
-      <option name="JSP" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="PHP" value="false" />
-      <option name="PHP Comment" value="true" />
-      <option name="PHP String Literal" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
-    </context>
-  </template>
-  <template name="oc" value="options={&quot;comment&quot;=&quot;$VALUE$&quot;}" description="column comment" toReformat="true" toShortenFQNames="true">
-    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />

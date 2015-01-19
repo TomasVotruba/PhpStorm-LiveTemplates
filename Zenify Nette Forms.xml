@@ -23,27 +23,6 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="fv" value="$$values = $$form-&gt;values;" description="form values" toReformat="true" toShortenFQNames="true">
-    <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="SQL" value="false" />
-      <option name="JSP" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="PHP" value="true" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
-    </context>
-  </template>
   <template name="sp" value="-&gt;setPrompt('$PROMPT$')$END$" description="prompt" toReformat="false" toShortenFQNames="true">
     <variable name="PROMPT" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -90,28 +69,6 @@
   </template>
   <template name="sc" value="-&gt;setAttribute('class', '$CLASS$')" description="set class" toReformat="false" toShortenFQNames="true">
     <variable name="CLASS" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="SQL" value="false" />
-      <option name="JSP" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="PHP" value="true" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
-    </context>
-  </template>
-  <template name="pf" value="public function processForm($NS$ $form)&#10;{&#10;&#9;$END$&#10;}" description="process form" toReformat="true" toShortenFQNames="true">
-    <variable name="NS" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
