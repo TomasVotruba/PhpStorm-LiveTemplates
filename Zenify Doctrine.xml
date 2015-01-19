@@ -24,7 +24,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="fb" value="/**&#10; * @{inheritDoc}&#10; */&#10;public function findBy(array $criteria, array $orderBy = NULL, $limit = NULL, $offset = NULL)&#10;{&#10;&#9;return $this-&gt;$DAO$Dao-&gt;findBy($criteria, $orderBy, $limit, $offset);&#10;}" description="findBy" toReformat="true" toShortenFQNames="true">
+  <template name="fb" value="/**&#10; * {@inheritdoc}&#10; */&#10;public function findBy(array $criteria, array $orderBy = NULL, $limit = NULL, $offset = NULL)&#10;{&#10;&#9;return $this-&gt;$DAO$Dao-&gt;findBy($criteria, $orderBy, $limit, $offset);&#10;}" description="findBy" toReformat="true" toShortenFQNames="true">
     <variable name="DAO" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
