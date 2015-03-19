@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templateSet group="Zenify Nette">
-  <template name="cc" value="/**&#10; * @return $NAMESPACE$&#10; */&#10;protected function createComponent$NAME$($NAMESPACE$ $$factory)&#10;{&#10;&#9;$$control = $$factory-&gt;create();&#10;&#9;return $$control;&#10;}&#10;" description="create component in presenter" toReformat="false" toShortenFQNames="true">
+  <template name="cc" value="/**$END$&#10;protected function createComponent$NAME$()&#10;{&#10;&#9;return $$this-&gt;$FACTORY$-&gt;create();&#10;}&#10;" description="create component in presenter" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="NAMESPACE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FACTORY" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
       <option name="XSL_TEXT" value="false" />
       <option name="XML" value="false" />
-      <option name="SQL" value="false" />
       <option name="JSP" value="false" />
       <option name="CSS_PROPERTY_VALUE" value="false" />
       <option name="CSS_DECLARATION_BLOCK" value="false" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="TypeScript" value="false" />
-      <option name="CoffeeScript" value="false" />
       <option name="PHP" value="true" />
-      <option name="HAML" value="false" />
       <option name="OTHER" value="false" />
     </context>
   </template>
@@ -49,29 +45,6 @@
   <template name="fm" value="$this-&gt;flashMessage('$MESSAGE$', '$TYPE$');" description="flash message" toReformat="true" toShortenFQNames="true">
     <variable name="MESSAGE" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="TYPE" expression="enum(&quot;success&quot;, &quot;danger&quot;, &quot;info&quot;)" defaultValue="success" alwaysStopAt="true" />
-    <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="SQL" value="false" />
-      <option name="JSP" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="PHP" value="true" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
-    </context>
-  </template>
-  <template name="ccf" value="protected function createComponentForm($FACTORY$ $factory)&#10;{&#10;&#9;$form = $factory-&gt;create();&#10;&#9;$END$&#10;&#9;$form-&gt;addSubmit('send', '$SUBMIT$');&#10;&#10;&#9;return $form;&#10;}" description="create component form" toReformat="true" toShortenFQNames="true">
-    <variable name="FACTORY" expression="enum(&quot;Zenify\\Application\\IEntityFormFactory&quot;, &quot;Zenify\\Application\\IFormFactory&quot;)" defaultValue="" alwaysStopAt="true" />
-    <variable name="SUBMIT" expression="" defaultValue="&quot;Uložit&quot;" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
