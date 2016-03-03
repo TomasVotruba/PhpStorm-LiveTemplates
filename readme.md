@@ -9,11 +9,11 @@ First, find your configuration folder.
 	Linux: ~\.WebIde<version>\config
 	MacOS: ~/Library/Preferences/WebIde<version>
 
-On my linux, it would be `~/.WebIde80/config`. There is a `templates/` directory, that contains XML files with Live Templates.
+On my linux, it would be `~/.WebIde110/config`. There is a `templates/` directory, that contains XML files with Live Templates.
 
 To allow more template collections, use simply `wget`:
 
-	$ cd ~/.WebIde80/config/templates
+	$ cd ~/.WebIde110/config/templates
 	$ wget https://github.com/Zenify/PhpStorm-LiveTemplates/archive/master.zip
 	$ unzip master.zip
 	$ mv PhpStorm-LiveTemplates-master/* .
