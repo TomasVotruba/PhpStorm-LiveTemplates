@@ -149,12 +149,12 @@ private $$$PROPERTY$;
 #### uid
 
 ```php
-	/**
-	 * @ORM\Id
-	 * @ORM\Column(type="string", length=36)
-	 * @var $END$Id
-	 */
-	private $id;
+/**
+ * @ORM\Id
+ * @ORM\Column(type="string", length=36)
+ * @var $END$Id
+ */
+private $id;
 ```
 
 #### uc
