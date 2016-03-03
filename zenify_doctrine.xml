@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templateSet group="Zenify Doctrine">
+  <template name="uid" value="&#9;/**&#10;&#9; * @ORM\Id&#10;&#9; * @ORM\Column(type=&quot;string&quot;, length=36)&#10;&#9; * @var $END$Id&#10;&#9; */&#10;&#9;private $id;&#10;" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_TEXT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JS_EXPRESSION" value="false" />
+      <option name="JS_STATEMENT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="PHP" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
   <template name="en" value="namespace App\$MODULE$Module\Entities;&#10;&#10;use Doctrine\ORM\Mapping as ORM;&#10;use Kdyby\Doctrine\Entities\Attributes\Identifier;&#10;use Kdyby\Doctrine\Entities\BaseEntity;&#10;&#10;&#10;/**&#10; * @ORM\Entity&#10; * @ORM\Table&#10; */&#10;class $ENTITY$ extends BaseEntity&#10;{&#10;&#9;use Identifier;&#10;&#9;&#10;&#9;$END$&#10;}&#10;" description="entity" toReformat="true" toShortenFQNames="true">
     <variable name="MODULE" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ENTITY" expression="capitalize(underscoresToCamelCase(TABLE))" defaultValue="" alwaysStopAt="false" />
