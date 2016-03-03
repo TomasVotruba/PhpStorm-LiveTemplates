@@ -1,6 +1,5 @@
 # PhpStorm Live Templates
 
-
 ## Installation
 
 First, find your configuration folder.
@@ -21,3 +20,8 @@ To allow more template collections, use simply `wget`:
 
 
 Restart PhpStorm and profit!
+
+
+## Next Inspiration
+
+- If you love Symfony, check [live templates from KNP University](https://github.com/knpuniversity/phpstorm-settings).
