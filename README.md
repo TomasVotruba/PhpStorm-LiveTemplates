@@ -17,7 +17,7 @@ To allow more template collections, use simply `wget`:
 	$ wget https://github.com/Zenify/PhpStorm-LiveTemplates/archive/master.zip
 	$ unzip master.zip
 	$ mv PhpStorm-LiveTemplates-master/* .
-	$ rm -r PhpStorm-LiveTemplates-master && rm master.zip && rm readme.md
+	$ rm -r PhpStorm-LiveTemplates-master && rm master.zip && rm README.md
 
 
 Restart PhpStorm and profit!
