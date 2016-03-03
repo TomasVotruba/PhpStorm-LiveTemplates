@@ -28,7 +28,7 @@ Restart PhpStorm and profit!
 
 #### ctor
 
-```þhp
+```php
 public function __construct($END$)
 {
 }
