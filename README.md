@@ -8,7 +8,7 @@ First, find your configuration folder.
 	Linux: ~\.PhpStorm<version>\config
 	MacOS: ~/Library/Preferences/PhpStorm<version>
 
-On my linux, it would be `~/.PhpStorm110/config`. There is a `templates/` directory, that contains XML files with Live Templates.
+On my linux, it would be `~/.PhpStorm2016.1/config`. There is a `templates/` directory, that contains XML files with Live Templates.
 
 To allow more template collections, use simply `wget`:
 
