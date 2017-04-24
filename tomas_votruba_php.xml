@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="Zenify PHP">
+    <template name="st" value="declare(strict_types=1);" description="" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="PHP" value="true" />
+        </context>
+    </template>
+    <template name="ctor" value="public function __construct($END$)&#10;{&#10;}" description="constructor" toReformat="true" toShortenFQNames="true">
+        <context>
+            <option name="PHP" value="true" />
+        </context>
+    </template>
+    <template name="pub" value="public function $NAME$($ARGS$)&#10;{&#10;    $END$&#10;}" description="public function" toReformat="true" toShortenFQNames="true">
+        <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="ARGS" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="PHP" value="true" />
+        </context>
+    </template>
+    <template name="pri" value="/***/&#10;private function $NAME$($ARGS$)&#10;{&#10;    ctor$END$&#10;}" description="private function" toReformat="true" toShortenFQNames="true">
+        <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="ARGS" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="PHP" value="true" />
+        </context>
+    </template>
+    <template name="d" value="dump($END$);" toReformat="true" toShortenFQNames="true">
+        <context>
+            <option name="PHP" value="true" />
+        </context>
+    </template>
+    <template name="vs" value="/**&#10; * @var string&#10; */" description="" toReformat="true" toShortenFQNames="true">
+        <context>
+            <option name="PHP Class Member" value="true" />
+        </context>
+    </template>
+    <template name="va" value="/**&#10; * @var $TYPE$[]&#10; */" description="" toReformat="true" toShortenFQNames="true">
+        <variable name="TYPE" expression="" defaultValue="&quot;string&quot;" alwaysStopAt="true" />
+        <context>
+            <option name="PHP Class Member" value="true" />
+        </context>
+    </template>
+    <template name="vi" value="/**&#10; * @var int&#10; */" description="" toReformat="true" toShortenFQNames="true">
+        <context>
+            <option name="PHP Class Member" value="true" />
+        </context>
+    </template>
+    <template name="ra" value="/**&#10; * @return $TYPE$[]&#10; */" description="" toReformat="true" toShortenFQNames="true">
+        <variable name="TYPE" expression="" defaultValue="&quot;string&quot;" alwaysStopAt="true" />
+        <context>
+            <option name="PHP Class Member" value="true" />
+        </context>
+    </template>
+</templateSet>

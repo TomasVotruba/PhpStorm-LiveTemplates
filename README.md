@@ -1,36 +1,50 @@
-# PhpStorm Live Templates
+# My Handy PhpStorm Live Templates
 
-## Installation
+## Install
 
-First, find your configuration folder.
+Find your folder with live templates XML files:
 
-	Windows: <your home directory>\.PhpStorm<version>\config
-	Linux: ~\.PhpStorm<version>\config
-	MacOS: ~/Library/Preferences/PhpStorm<version>
+- **Linux**: `~/.PhpStormVERSION/config/templates`
+- **MacOS**: `~/Library/Preferences/PhpStormVERSION/templates`
+- **Windows**: `HOME_DIRECTORY\.PhpStormVERSIONS\config\templates`
 
-On my linux, it would be `~/.PhpStorm2016.1/config`. There is a `templates/` directory, that contains XML files with Live Templates.
+On my Linux, it would be `~/.PhpStorm2017.1/config/templates`.
 
-To allow more template collections, use simply `wget`:
+### Download and Unpack This Package
 
-	$ cd ~/.PhpStorm2016.1/config/templates
-	$ wget https://github.com/Zenify/PhpStorm-LiveTemplates/archive/master.zip
-	$ unzip master.zip
-	$ mv PhpStorm-LiveTemplates-master/* .
-	$ rm -r PhpStorm-LiveTemplates-master && rm master.zip && rm README.md
-
+```bash
+cd ~/.PhpStorm2017.1/config/templates
+wget https://github.com/TomasVotruba/PhpStorm-LiveTemplates/archive/master.zip
+unzip master.zip
+mv PhpStorm-LiveTemplates-master/* .
+rm -r PhpStorm-LiveTemplates-master && rm master.zip && rm README.md
+```
 
 Restart PhpStorm and profit!
 
 
 ## Live Templates
 
-### PHP Templates
+#### `st`
 
-#### ctor
+```php
+declare(strict_types=1);
+```
+
+#### `ctor`
 
 ```php
 public function __construct($END$)
 {
+}
+```
+
+#### pub
+
+```php
+public function $NAME$($ARGS$)
+{
+    $END$
 }
 ```
 
@@ -44,128 +58,34 @@ private function $NAME$($ARGS$)
 }
 ```
 
-#### pro
-
-```php
-/***/
-protected function $NAME$($ARGS$)
-{
-    $END$
-}
-```
-
-#### pub
-
-```php
-public function $NAME$($ARGS$)
-{
-    $END$
-}
-```
-
-#### id
+#### vs
 
 ```php
 /**
- * {@inheritdoc}
+ * @var string
  */
 ```
 
-#### try
-
-```php
-try {
-	$SELECTION$
-
-} catch ($EXCEPTION_TYPE$ $exception) {
-	$END$
-}
-```
-
-#### t
-
-```php
-$this->$END$
-```
-
-### Doctrine Templates
-
-#### col
+#### va
 
 ```php
 /**
- * @ORM\Column(type="$TYPE$", nullable=TRUE)
- * @var $TYPE$$END$
+ * @var string[]
  */
-private $$$PROPERTY$;
 ```
 
-#### oto
+#### vi
 
 ```php
 /**
- * @ORM\OneToOne(targetEntity="$TYPE$", $COMPLETE$="$INVERSE_PROPERTY$"$END$, cascade={"persist"})
- * @ORM\JoinColumn(name="$PROPERTY$_id", referencedColumnName="id")
- * @var $TYPE$
+ * @var int
  */
-private $$$PROPERTY$;
 ```
 
-#### otm
+#### ra
 
 ```php
 /**
- * @ORM\OneToMany(targetEntity="$TYPE$", mappedBy="$OTHER_PROPERTY$"$END$, cascade={"persist"})
- * @var $TYPE$
+ * @return string[]
  */
-private $$$PROPERTY$;
 ```
-
-#### mto
-
-```php
-/**
- * @ORM\ManyToOne(targetEntity="$TYPE$", inversedBy="$OTHER_PROPERTY$"$END$, cascade={"persist"})
- * @ORM\JoinColumn(name="$COL$_id", referencedColumnName="id")
- * @var $TYPE$
- */
-private $$$PROPERTY$;
-```
-
-#### mtm
-
-```php
-/**
- * @ORM\ManyToMany(targetEntity="$TYPE$", $COMPLETE$="$INVERSE_PROPERTY$"$END$, cascade={"persist"})
- * @ORM\JoinTable(name="$TABLE_NAME$",
- * 		joinColumns={@ORM\JoinColumn(name="$JOIN_COL$_id", referencedColumnName="id")},
- * 		inverseJoinColumns={@ORM\JoinColumn(name="$INVERSE_COL$_id", referencedColumnName="id")} 
- * 	)
- * @var $TYPE$[]|\Doctrine\Common\Collections\ArrayCollection
- */
-private $$$PROPERTY$;
-```
-
-#### uid
-
-```php
-/**
- * @ORM\Id
- * @ORM\Column(type="string", length=36)
- * @var $END$Id
- */
-private $id;
-```
-
-#### uc
-
-```php
-uniqueConstraints={
-*        @ORM\UniqueConstraint(name="$NAME$", columns={"$COLUMN1$", "$COLUMN2$"})     
-* }
-```
-
-## Next Inspiration
-
-- If you love Symfony, check [live templates from @knpuniversity](https://github.com/knpuniversity/phpstorm-settings).
-- If you love Nette, check [live templates from @fprochazka](https://github.com/fprochazka/phpstorm-livetemplates)
