@@ -4,20 +4,20 @@
 
 ## Install
 
-### 1. Find your folder with live templates XML files:
+1. Find your folder with live templates XML files:
 
-- **Linux**: `~/.PhpStormVERSION/config/templates`
-- **MacOS**: `~/Library/Preferences/PhpStormVERSION/templates`
-- **Windows**: `HOME_DIRECTORY\.PhpStormVERSIONS\config\templates`
+    - **Linux**: `~/.PhpStormVERSION/config/templates`
+    - **MacOS**: `~/Library/Preferences/PhpStormVERSION/templates`
+    - **Windows**: `HOME_DIRECTORY\.PhpStormVERSIONS\config\templates`
 
-### 2. Download XML with Templates
+2. Download XML with Templates
 
-```bash
-cd ~/.PhpStorm2017.1/config/templates
-wget https://raw.githubusercontent.com/TomasVotruba/PhpStorm-LiveTemplates/master/tomas_votruba_php.xml
-```
+    ```bash
+    cd ~/.PhpStorm2017.1/config/templates
+    wget https://raw.githubusercontent.com/TomasVotruba/PhpStorm-LiveTemplates/master/tomas_votruba_php.xml
+    ```
 
-### 3. Restart PhpStorm and profit!
+3. Restart PhpStorm and profit!
 
 
 ## What is in this package?
