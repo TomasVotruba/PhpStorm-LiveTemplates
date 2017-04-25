@@ -17,7 +17,7 @@
             <option name="PHP" value="true" />
         </context>
     </template>
-    <template name="pri" value="/***/&#10;private function $NAME$($ARGS$)&#10;{&#10;$END$&#10;}" description="private function" toReformat="true" toShortenFQNames="true">
+    <template name="pri" value="private function $NAME$($ARGS$)&#10;{&#10;$END$&#10;}" description="private function" toReformat="true" toShortenFQNames="true">
         <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
         <variable name="ARGS" expression="" defaultValue="" alwaysStopAt="true" />
         <context>
