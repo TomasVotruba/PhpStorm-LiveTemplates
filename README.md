@@ -1,5 +1,7 @@
 # My Handy PhpStorm Live Templates
 
+![Constructor Live Template](phpstorm_live_templates.png)
+
 ## Install
 
 ### 1. Find your folder with live templates XML files:
@@ -7,8 +9,6 @@
 - **Linux**: `~/.PhpStormVERSION/config/templates`
 - **MacOS**: `~/Library/Preferences/PhpStormVERSION/templates`
 - **Windows**: `HOME_DIRECTORY\.PhpStormVERSIONS\config\templates`
-
-On my Linux, it would be `~/.PhpStorm2017.1/config/templates`.
 
 ### 2. Download XML with Templates
 
