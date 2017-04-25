@@ -48,7 +48,6 @@ public function $NAME$($ARGS$)
 #### `pri`
 
 ```php
-/***/
 private function $NAME$($ARGS$)
 {
     $END$
