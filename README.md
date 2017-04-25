@@ -39,7 +39,7 @@ public function __construct($END$)
 }
 ```
 
-#### pub
+#### `pub`
 
 ```php
 public function $NAME$($ARGS$)
@@ -48,7 +48,7 @@ public function $NAME$($ARGS$)
 }
 ```
 
-#### pri
+#### `pri`
 
 ```php
 /***/
@@ -58,7 +58,7 @@ private function $NAME$($ARGS$)
 }
 ```
 
-#### vs
+#### `vs`
 
 ```php
 /**
@@ -66,7 +66,7 @@ private function $NAME$($ARGS$)
  */
 ```
 
-#### va
+#### `va`
 
 ```php
 /**
@@ -74,7 +74,7 @@ private function $NAME$($ARGS$)
  */
 ```
 
-#### vi
+#### `vi`
 
 ```php
 /**
@@ -82,7 +82,7 @@ private function $NAME$($ARGS$)
  */
 ```
 
-#### ra
+#### `ra`
 
 ```php
 /**
